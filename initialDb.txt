@@ -1,0 +1,59 @@
+
+homes
+ - homeId
+ - fullAddress
+ - suburb
+ - postCode
+ - state
+ - country
+ - hasSwimmingPool
+
+people
+ - personID
+ - homeId
+ - name
+ - surname
+ - yearOfBirth
+ - willBabySit
+ - willTravelToBabysit
+ - willBabysitHowMany
+ - willBabysitFromAge
+ - willBabysitToAge
+ - calendarUrl
+
+relationships
+  -personId
+ - trustPersonId
+ - trustLevel
+
+children
+ - childId
+ - homeId
+ - name
+ - yearOfBirth
+ - monthOfBirth
+ - canSwim
+ - allowedInSwimmingPool
+ - allowedToGoOut
+ - allowedToBePhotographed
+
+bookings
+ - bookingId
+ - createdByPersonId *
+ - createdByHomeId *
+ - travelToHomeFlag *
+ - assignedCarerPersonId
+ - willBeAtHomeId *
+ - status
+ - dateFrom
+ - dateTo
+
+bookingsPresentChildren
+ - bookingId
+ - childId
+
+bookingsPresentPeople
+ - bookingId
+ - personId
+
+
